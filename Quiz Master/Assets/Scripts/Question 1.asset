@@ -13,3 +13,9 @@ MonoBehaviour:
   m_Name: Question 1
   m_EditorClassIdentifier: 
   strQuestion: What are the keybinds to move, rotate and scale an object?
+  strAnswers:
+  - m, ctr + r, s
+  - g, r, s
+  - r, e, m
+  - m, r, x
+  intCorrectAnswerIndex: 1

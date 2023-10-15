@@ -14,3 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   strQuestion: When UV unwrapping, what context menu option do you use to tell blender
     where to "cut up" the mesh?
+  strAnswers:
+  - Split faces
+  - Seam
+  - Unwrap
+  - Project from View
+  intCorrectAnswerIndex: 1

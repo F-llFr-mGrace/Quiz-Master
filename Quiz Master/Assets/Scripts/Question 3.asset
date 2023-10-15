@@ -12,4 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6949efb90459964cbe424a4d2a8a14e, type: 3}
   m_Name: Question 3
   m_EditorClassIdentifier: 
-  strQuestion: Which technique is not use to texture an object?
+  strQuestion: Which technique is not used to texture an object?
+  strAnswers:
+  - Texture painting
+  - Procedural texturing
+  - Sculpted texture
+  - Image texture
+  intCorrectAnswerIndex: 2

@@ -13,3 +13,9 @@ MonoBehaviour:
   m_Name: Question 5
   m_EditorClassIdentifier: 
   strQuestion: Why would you use a principled BSDF?
+  strAnswers:
+  - To add realistic materials to 3D objects
+  - To create particle systems
+  - To model complex 3D shapes
+  - To control lighting in a scene
+  intCorrectAnswerIndex: 0
