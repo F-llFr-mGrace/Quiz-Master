@@ -150,15 +150,15 @@ RectTransform:
   m_GameObject: {fileID: 195303533}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.191205, y: 0.13758, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 646272183}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -60, y: 0}
-  m_SizeDelta: {x: 278.1, y: 170}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -8.409119, y: 162.44275}
+  m_SizeDelta: {x: 6378.939, y: 361.719}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &195303535
 MonoBehaviour:
@@ -207,12 +207,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
+  m_fontSize: 1323.65
   m_fontSizeBase: 24
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 10000
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -349,6 +349,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: ButtonAnswer (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7715269840513089468, guid: ad1c7e12efdadea49aab27f22b4a2af9, type: 3}
+      propertyPath: m_fontSize
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715269840513089468, guid: ad1c7e12efdadea49aab27f22b4a2af9, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715269840513089468, guid: ad1c7e12efdadea49aab27f22b4a2af9, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -358,6 +370,11 @@ PrefabInstance:
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2876566599194137566, guid: ad1c7e12efdadea49aab27f22b4a2af9, type: 3}
   m_PrefabInstance: {fileID: 248031631}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &333227962 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6849382296017008159, guid: ad1c7e12efdadea49aab27f22b4a2af9, type: 3}
+  m_PrefabInstance: {fileID: 945936412}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &338697780
 GameObject:
@@ -385,7 +402,7 @@ RectTransform:
   m_GameObject: {fileID: 338697780}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.59990567, y: 0.38866353, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1512833727}
@@ -394,10 +411,10 @@ RectTransform:
   - {fileID: 945936413}
   m_Father: {fileID: 646272183}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000019073, y: -47.6}
-  m_SizeDelta: {x: 350, y: 120}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -179}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &338697782
 MonoBehaviour:
@@ -710,6 +727,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionText: {fileID: 195303535}
   question: {fileID: 11400000, guid: 9fa68ff4662846e4591af886dcd06e49, type: 2}
+  answerButtons:
+  - {fileID: 1641383145}
+  - {fileID: 1740016491}
+  - {fileID: 700003985}
+  - {fileID: 333227962}
+--- !u!1 &700003985 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6849382296017008159, guid: ad1c7e12efdadea49aab27f22b4a2af9, type: 3}
+  m_PrefabInstance: {fileID: 1666781368}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &859207421
 GameObject:
   m_ObjectHideFlags: 0
@@ -870,6 +897,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: ButtonAnswer (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7715269840513089468, guid: ad1c7e12efdadea49aab27f22b4a2af9, type: 3}
+      propertyPath: m_fontSize
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715269840513089468, guid: ad1c7e12efdadea49aab27f22b4a2af9, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715269840513089468, guid: ad1c7e12efdadea49aab27f22b4a2af9, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -883,6 +922,11 @@ RectTransform:
 --- !u!224 &1512833727 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2876566599194137566, guid: ad1c7e12efdadea49aab27f22b4a2af9, type: 3}
+  m_PrefabInstance: {fileID: 2752722259872274647}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1641383145 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6849382296017008159, guid: ad1c7e12efdadea49aab27f22b4a2af9, type: 3}
   m_PrefabInstance: {fileID: 2752722259872274647}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1666781368
@@ -977,6 +1021,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: ButtonAnswer (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7715269840513089468, guid: ad1c7e12efdadea49aab27f22b4a2af9, type: 3}
+      propertyPath: m_fontSize
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715269840513089468, guid: ad1c7e12efdadea49aab27f22b4a2af9, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715269840513089468, guid: ad1c7e12efdadea49aab27f22b4a2af9, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -986,6 +1042,11 @@ PrefabInstance:
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2876566599194137566, guid: ad1c7e12efdadea49aab27f22b4a2af9, type: 3}
   m_PrefabInstance: {fileID: 1666781368}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1740016491 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6849382296017008159, guid: ad1c7e12efdadea49aab27f22b4a2af9, type: 3}
+  m_PrefabInstance: {fileID: 248031631}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1833624448
 GameObject:
@@ -1019,11 +1080,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2076591141}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -140.6908, y: 84.25}
-  m_SizeDelta: {x: 468.6184, y: 98.5}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: -1.0773, y: -0.000061035156}
+  m_SizeDelta: {x: 737.952, y: 185.764}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1833624450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1071,12 +1132,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
+  m_fontSize: 137.3
   m_fontSizeBase: 30
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 1000
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -1107,7 +1168,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 275.828, y: 0, z: 0, w: 51.83348}
+  m_margin: {x: -0.25946045, y: 0, z: 0, w: 2.1822357}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1492,6 +1553,18 @@ PrefabInstance:
     - target: {fileID: 6849382296017008159, guid: ad1c7e12efdadea49aab27f22b4a2af9, type: 3}
       propertyPath: m_Name
       value: ButtonAnswer (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715269840513089468, guid: ad1c7e12efdadea49aab27f22b4a2af9, type: 3}
+      propertyPath: m_fontSize
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715269840513089468, guid: ad1c7e12efdadea49aab27f22b4a2af9, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715269840513089468, guid: ad1c7e12efdadea49aab27f22b4a2af9, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
