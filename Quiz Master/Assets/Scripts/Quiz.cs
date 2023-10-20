@@ -7,12 +7,12 @@ using System;
 
 public class Quiz : MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI questionText;
-    [SerializeField] QuestionSO question;
-    [SerializeField] GameObject[] answerButtons;
-    [SerializeField] Sprite defaultAnswerSprite;
-    [SerializeField] Sprite correctAnswerSprite;
-    int correctAnswerIndex;
+    [SerializeField] TextMeshProUGUI tmpQuestionText;
+    [SerializeField] QuestionSO qsoQuestion;
+    [SerializeField] GameObject[] goAnswerButtons;
+    [SerializeField] Sprite sprDefaultAnswerSprite;
+    [SerializeField] Sprite sprCorrectAnswerSprite;
+    int intCorrectAnswerIndex;
 
 
     private void Start()
@@ -24,19 +24,19 @@ public class Quiz : MonoBehaviour
     {
         Image buttonImage;
 
-        if (index == question.GetCorrectAnswerIndex())
+        if (index == qsoQuestion.GetCorrectAnswerIndex())
         {
-            questionText.text = "Correct!";
-            buttonImage = answerButtons[index].GetComponentInChildren<Image>();
-            buttonImage.sprite = correctAnswerSprite;
+            tmpQuestionText.text = "Correct!";
+            buttonImage = goAnswerButtons[index].GetComponentInChildren<Image>();
+            buttonImage.sprite = sprCorrectAnswerSprite;
         }
         else
         {
-            correctAnswerIndex = question.GetCorrectAnswerIndex();
-            string correctAnswer = question.GetAnswers(correctAnswerIndex);
-            questionText.text = "Sorry, the correct answer is:\n" + correctAnswer;
-            buttonImage = answerButtons[correctAnswerIndex].GetComponent<Image>();
-            buttonImage.sprite = correctAnswerSprite;
+            intCorrectAnswerIndex = qsoQuestion.GetCorrectAnswerIndex();
+            string correctAnswer = qsoQuestion.GetAnswers(intCorrectAnswerIndex);
+            tmpQuestionText.text = "Sorry, the correct answer is:\n" + correctAnswer;
+            buttonImage = goAnswerButtons[intCorrectAnswerIndex].GetComponent<Image>();
+            buttonImage.sprite = sprCorrectAnswerSprite;
         }
         SetButtonState(false);
     }
@@ -48,28 +48,28 @@ public class Quiz : MonoBehaviour
     }
     private void DisplayQuestion()
     {
-        questionText.text = question.GetQuestion();
+        tmpQuestionText.text = qsoQuestion.GetQuestion();
 
-        for (int i = 0; i < answerButtons.Length; i++)
+        for (int i = 0; i < goAnswerButtons.Length; i++)
         {
-            TextMeshProUGUI buttonText = answerButtons[i].GetComponentInChildren<TextMeshProUGUI>();
-            buttonText.text = question.GetAnswers(i);
+            TextMeshProUGUI buttonText = goAnswerButtons[i].GetComponentInChildren<TextMeshProUGUI>();
+            buttonText.text = qsoQuestion.GetAnswers(i);
         }
     }
     private void SetButtonState(bool state)
     {
-        for (int i = 0; i < answerButtons.Length; i++)
+        for (int i = 0; i < goAnswerButtons.Length; i++)
         {
-            Button button = answerButtons[i].GetComponent<Button>();
+            Button button = goAnswerButtons[i].GetComponent<Button>();
             button.interactable = state;
         }
     }
     private void SetDefaultButtonSprites()
     {
-        for (int i = 0; i < answerButtons.Length; i++)
+        for (int i = 0; i < goAnswerButtons.Length; i++)
         {
-            Image buttonImage = answerButtons[i].GetComponent<Image>();
-            buttonImage.sprite = defaultAnswerSprite;
+            Image buttonImage = goAnswerButtons[i].GetComponent<Image>();
+            buttonImage.sprite = sprDefaultAnswerSprite;
         }
     }
 }
