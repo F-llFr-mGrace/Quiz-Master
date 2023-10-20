@@ -17,6 +17,7 @@ public class Timer : MonoBehaviour
     }
     public void CancelTimer()
     {
+        fltTimerValue = 0f;
     }
     void UpdateTimer()
     {
